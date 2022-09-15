@@ -10,8 +10,7 @@ if __name__ == '__main__':
         output+= str(numbers)
     print(output)
 
-# Better code
-
+Improved code
 if __name__ == '__main__':
     n = int(input())
     if 1 <= n <= 150:
