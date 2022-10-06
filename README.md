@@ -16,3 +16,19 @@ if __name__ == '__main__':
     if 1 <= n <= 150:
         for i in range(n):
             print(i+1, end='')
+            
+           
+# Mutating Strings 
+# Two Methods
+# A. 
+
+def mutate_string(string, position, character):
+    return(string[:position] + character + string[position + 1:])
+
+# B. 
+
+def mutate_string(string, position, character):
+    string_list = list(string)
+    string_list[position] = character
+    string = "".join(string_list)
+    return string
